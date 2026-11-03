@@ -44,7 +44,8 @@ fi
 # The phone, by UDID. Xcode remembers paired devices even when they're unplugged ("unavailable"), so
 # this takes one that's reachable: "connected", or "available (paired)", which an idle phone drops
 # to and devicectl reconnects on first use. devicectl prints the UDID as 8 hex, a dash, then 16 more.
-UDID=$(xcrun devicectl list devices 2>/dev/null | grep -E '[[:space:]](connected|available \(paired\))[[:space:]]' | grep -oE '[0-9A-Fa-f]{8}-[0-9A-Fa-f]{16}' | head -1)
+# Another phone than the first paired one: UDID=... zsh Tools/...
+UDID=${UDID:-$(xcrun devicectl list devices 2>/dev/null | grep -E '[[:space:]](connected|available \(paired\))[[:space:]]' | grep -oE '[0-9A-Fa-f]{8}-[0-9A-Fa-f]{16}' | head -1)}
 if [ -z "$UDID" ]; then
     echo "No connected iPhone. Plug it in, unlock it, and trust this Mac."
     exit 1

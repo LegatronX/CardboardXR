@@ -37,7 +37,8 @@ while [ $# -gt 0 ]; do
 done
 [ $CHECK_ONLY = 1 ] && exit 0
 
-UDID=$(xcrun devicectl list devices 2>/dev/null | grep -E '[[:space:]](connected|available \(paired\))[[:space:]]' | grep -oE '[0-9A-Fa-f]{8}-[0-9A-Fa-f]{16}' | head -1)
+# Another phone than the first paired one: UDID=... zsh Tools/...
+UDID=${UDID:-$(xcrun devicectl list devices 2>/dev/null | grep -E '[[:space:]](connected|available \(paired\))[[:space:]]' | grep -oE '[0-9A-Fa-f]{8}-[0-9A-Fa-f]{16}' | head -1)}
 if [ -z "$UDID" ]; then
     echo "No connected iPhone. Plug it in, unlock it, and trust this Mac."
     exit 1
