@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14b8a6"/><stop offset="1" stop-color="#0b5e73"/></linearGradient>
+<filter id="sh" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="30" stdDeviation="24" flood-color="#032a33" flood-opacity=".5"/></filter>
+</defs>
+<rect width="1024" height="1024" fill="url(#bg)"/>
+<g filter="url(#sh)">
+<!-- dessus -->
+<path d="M210 360 L512 250 L814 360 L512 470z" fill="#f2c995"/>
+<path d="M210 360 L512 470 L512 500 L210 390z" fill="#e7b57c"/>
+<!-- face avant gauche / droite -->
+<path d="M210 390 L512 500 L512 780 L455 760 Q400 650 330 690 L210 646z" fill="#d49a5c"/>
+<path d="M814 390 L512 500 L512 780 L569 760 Q624 650 694 690 L814 646z" fill="#b97d42"/>
+<path d="M814 360 L512 470 L512 500 L814 390z" fill="#c98d50"/>
+<!-- plis -->
+<g stroke="#8a5528" stroke-width="4" opacity=".35" fill="none"><path d="M210 360 L512 470 L814 360"/><path d="M512 500 L512 780"/></g>
+<!-- lentilles -->
+<ellipse cx="375" cy="560" rx="78" ry="92" transform="rotate(20 375 560)" fill="#20304a"/>
+<ellipse cx="649" cy="560" rx="78" ry="92" transform="rotate(-20 649 560)" fill="#20304a"/>
+<ellipse cx="375" cy="560" rx="62" ry="76" transform="rotate(20 375 560)" fill="#5eead4"/>
+<ellipse cx="649" cy="560" rx="62" ry="76" transform="rotate(-20 649 560)" fill="#5eead4"/>
+<ellipse cx="355" cy="530" rx="18" ry="26" transform="rotate(20 355 530)" fill="#fff" opacity=".8"/>
+<ellipse cx="629" cy="530" rx="18" ry="26" transform="rotate(-20 629 530)" fill="#fff" opacity=".8"/>
+</g>
+<g fill="#fff" opacity=".85"><path d="M820 200 l10 28 28 10 -28 10 -10 28 -10 -28 -28 -10 28 -10z"/><path d="M200 210 l7 20 20 7 -20 7 -7 20 -7 -20 -20 -7 20 -7z"/></g>
+</svg>

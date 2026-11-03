@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<defs>
+<linearGradient id="kraft" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#dcaa72"/><stop offset="1" stop-color="#b98149"/></linearGradient>
+<pattern id="ondes" width="1024" height="34" patternUnits="userSpaceOnUse"><rect width="1024" height="34" fill="none"/><line x1="0" y1="17" x2="1024" y2="17" stroke="#8f5c2c" stroke-width="3" opacity=".18"/></pattern>
+<linearGradient id="ciel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2b0f6b"/><stop offset=".45" stop-color="#c2368f"/><stop offset=".62" stop-color="#ff8a4c"/><stop offset=".62" stop-color="#16062e"/><stop offset="1" stop-color="#0b0220"/></linearGradient>
+<linearGradient id="soleil" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe36b"/><stop offset="1" stop-color="#ff5d8f"/></linearGradient>
+<symbol id="scene" viewBox="-200 -200 400 400">
+<rect x="-200" y="-200" width="400" height="400" fill="url(#ciel)"/>
+<circle cx="0" cy="40" r="78" fill="url(#soleil)"/>
+<g fill="#16062e"><rect x="-90" y="20" width="180" height="7"/><rect x="-90" y="40" width="180" height="9"/><rect x="-90" y="62" width="180" height="11"/></g>
+<rect x="-200" y="48" width="400" height="160" fill="#140530"/>
+<g stroke="#ff4fd8" stroke-width="4" opacity=".9"><line x1="-200" y1="48" x2="200" y2="48"/><line x1="-200" y1="70" x2="200" y2="70"/><line x1="-200" y1="100" x2="200" y2="100"/><line x1="-200" y1="142" x2="200" y2="142"/><line x1="-200" y1="200" x2="200" y2="200"/>
+<line x1="0" y1="48" x2="0" y2="200"/><line x1="-30" y1="48" x2="-110" y2="200"/><line x1="30" y1="48" x2="110" y2="200"/><line x1="-60" y1="48" x2="-230" y2="200"/><line x1="60" y1="48" x2="230" y2="200"/><line x1="-95" y1="48" x2="-360" y2="200"/><line x1="95" y1="48" x2="360" y2="200"/></g>
+<g fill="#fff"><circle cx="-120" cy="-120" r="4"/><circle cx="110" cy="-140" r="5"/><circle cx="150" cy="-60" r="3"/><circle cx="-60" cy="-160" r="3"/></g>
+</symbol>
+<clipPath id="g"><circle cx="300" cy="512" r="190"/></clipPath>
+<clipPath id="d"><circle cx="724" cy="512" r="190"/></clipPath>
+<filter id="in" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000" flood-opacity=".5"/></filter>
+</defs>
+<rect width="1024" height="1024" fill="url(#kraft)"/>
+<rect width="1024" height="1024" fill="url(#ondes)"/>
+<path d="M440 1024 c0 -120 30 -190 72 -190 s72 70 72 190z" fill="#7a4a20" opacity=".55"/>
+<circle cx="300" cy="512" r="212" fill="#5a3416"/><circle cx="724" cy="512" r="212" fill="#5a3416"/>
+<g clip-path="url(#g)"><use href="#scene" x="100" y="312" width="400" height="400" transform="translate(14 0)"/></g>
+<g clip-path="url(#d)"><use href="#scene" x="524" y="312" width="400" height="400" transform="translate(-14 0)"/></g>
+<circle cx="300" cy="512" r="190" fill="none" stroke="#fff" stroke-width="6" opacity=".25"/>
+<circle cx="724" cy="512" r="190" fill="none" stroke="#fff" stroke-width="6" opacity=".25"/>
+<ellipse cx="240" cy="420" rx="50" ry="26" fill="#fff" opacity=".35" transform="rotate(-35 240 420)"/>
+<ellipse cx="664" cy="420" rx="50" ry="26" fill="#fff" opacity=".35" transform="rotate(-35 664 420)"/>
+</svg>

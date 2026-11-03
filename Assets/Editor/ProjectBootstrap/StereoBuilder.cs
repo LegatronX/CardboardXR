@@ -104,6 +104,7 @@ namespace ProjectBootstrap
         internal static string[] BuildScenes()
         {
             MaterialAssets.Ensure();
+            AppIcons.Ensure();
             DemoScenes.EnsureAll();
             var catalog = BuildCoreScene();
             if (catalog == null)

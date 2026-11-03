@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f2a3a"/><stop offset="1" stop-color="#06121c"/></linearGradient>
+<linearGradient id="t" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7cf5ff"/><stop offset="1" stop-color="#36c5ff"/></linearGradient>
+<linearGradient id="l" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff6fb5"/><stop offset="1" stop-color="#d13b8a"/></linearGradient>
+<linearGradient id="r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc35c"/><stop offset="1" stop-color="#ff8a3d"/></linearGradient>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="22"/></filter>
+</defs>
+<rect width="1024" height="1024" fill="url(#bg)"/>
+<g stroke="#2fd3ff" stroke-width="3" opacity=".22">
+<path d="M0 760 L1024 760 M0 830 L1024 830 M0 920 L1024 920 M512 700 L512 1024 M512 700 L200 1024 M512 700 L824 1024 M512 700 L-60 1024 M512 700 L1084 1024"/></g>
+<ellipse cx="512" cy="700" rx="230" ry="40" fill="#2fd3ff" opacity=".35" filter="url(#glow)"/>
+<g transform="translate(470 450) scale(.9)">
+<path d="M0 -230 L200 -115 L0 0 L-200 -115z" fill="url(#t)"/>
+<path d="M-200 -115 L0 0 L0 230 L-200 115z" fill="url(#l)"/>
+<path d="M200 -115 L0 0 L0 230 L200 115z" fill="url(#r)"/>
+<path d="M0 -230 L200 -115 L200 115 L0 230 L-200 115 L-200 -115z M-200 -115 L0 0 L200 -115 M0 0 L0 230" fill="none" stroke="#fff" stroke-width="8" stroke-linejoin="round" opacity=".55"/>
+</g>
+<g transform="translate(70 70)"><g fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+<path d="M820 860 C 760 800, 730 760, 735 700 L 770 590"/>
+<path d="M735 700 L 660 640"/>
+</g>
+<g fill="#fff"><circle cx="770" cy="590" r="22"/><circle cx="660" cy="640" r="22"/><circle cx="735" cy="700" r="16"/></g>
+<circle cx="715" cy="615" r="44" fill="none" stroke="#ffe36b" stroke-width="8" opacity=".9"/>
+<g stroke="#ffe36b" stroke-width="10" stroke-linecap="round"><line x1="715" y1="540" x2="715" y2="510"/><line x1="790" y1="615" x2="820" y2="615"/><line x1="768" y1="562" x2="790" y2="540"/></g></g>
+</svg>

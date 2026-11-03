@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<defs>
+<radialGradient id="bg" cx="50%" cy="40%" r="75%"><stop offset="0" stop-color="#5b2bd6"/><stop offset=".55" stop-color="#2a1170"/><stop offset="1" stop-color="#0d0631"/></radialGradient>
+<linearGradient id="kraft" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2b07a"/><stop offset="1" stop-color="#b37a43"/></linearGradient>
+<radialGradient id="lens" cx="40%" cy="35%" r="70%"><stop offset="0" stop-color="#bff8ff"/><stop offset=".35" stop-color="#3fd6ff"/><stop offset=".8" stop-color="#2a5cff"/><stop offset="1" stop-color="#1a1f7a"/></radialGradient>
+<filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#000" flood-opacity=".45"/></filter>
+</defs>
+<rect width="1024" height="1024" fill="url(#bg)"/>
+<g fill="#fff" opacity=".8"><circle cx="190" cy="210" r="6"/><circle cx="830" cy="170" r="8"/><circle cx="880" cy="820" r="5"/><circle cx="140" cy="790" r="7"/><circle cx="720" cy="120" r="4"/><circle cx="300" cy="900" r="4"/></g>
+<path d="M512 150 l14 40 40 14 -40 14 -14 40 -14 -40 -40 -14 40 -14z" fill="#fff" opacity=".9"/>
+<g filter="url(#shadow)">
+<path d="M170 340 h684 a70 70 0 0 1 70 70 v230 a70 70 0 0 1 -70 70 h-230 c-30 0 -40 -90 -112 -90 s-82 90 -112 90 h-230 a70 70 0 0 1 -70 -70 v-230 a70 70 0 0 1 70 -70z" fill="url(#kraft)"/>
+<path d="M170 340 h684 a70 70 0 0 1 70 70 v26 h-824 v-26 a70 70 0 0 1 70 -70z" fill="#f0c48f"/>
+<g stroke="#9a6534" stroke-width="5" opacity=".35"><line x1="130" y1="470" x2="894" y2="470"/></g>
+</g>
+<circle cx="345" cy="548" r="150" fill="#3fd6ff" opacity=".55" filter="url(#glow)"/>
+<circle cx="679" cy="548" r="150" fill="#3fd6ff" opacity=".55" filter="url(#glow)"/>
+<circle cx="345" cy="548" r="122" fill="#6a4222"/><circle cx="679" cy="548" r="122" fill="#6a4222"/>
+<circle cx="345" cy="548" r="108" fill="url(#lens)"/><circle cx="679" cy="548" r="108" fill="url(#lens)"/>
+<ellipse cx="312" cy="508" rx="34" ry="22" fill="#fff" opacity=".75" transform="rotate(-30 312 508)"/>
+<ellipse cx="646" cy="508" rx="34" ry="22" fill="#fff" opacity=".75" transform="rotate(-30 646 508)"/>
+</svg>

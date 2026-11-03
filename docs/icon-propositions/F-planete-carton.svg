@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<defs>
+<radialGradient id="bg" cx="30%" cy="25%" r="90%"><stop offset="0" stop-color="#1e3a8a"/><stop offset=".6" stop-color="#0b1440"/><stop offset="1" stop-color="#050818"/></radialGradient>
+<radialGradient id="pl" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#f6cf9c"/><stop offset=".6" stop-color="#c98d50"/><stop offset="1" stop-color="#7a4a20"/></radialGradient>
+<clipPath id="disc"><circle cx="512" cy="530" r="260"/></clipPath>
+<linearGradient id="ring" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ff4fd8"/><stop offset=".5" stop-color="#7cf5ff"/><stop offset="1" stop-color="#ff4fd8"/></linearGradient>
+<filter id="glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1024" height="1024" fill="url(#bg)"/>
+<g fill="#fff"><circle cx="150" cy="160" r="5"/><circle cx="870" cy="130" r="7"/><circle cx="900" cy="420" r="4"/><circle cx="110" cy="560" r="5"/><circle cx="820" cy="900" r="6"/><circle cx="210" cy="880" r="4"/><circle cx="620" cy="110" r="4"/></g>
+<!-- anneau arrière -->
+<ellipse cx="512" cy="530" rx="430" ry="120" transform="rotate(-18 512 530)" fill="none" stroke="url(#ring)" stroke-width="26" opacity=".55" filter="url(#glow)"/>
+<circle cx="512" cy="530" r="260" fill="url(#pl)"/>
+<g clip-path="url(#disc)" stroke="#7a4a20" stroke-width="7" opacity=".28">
+<path d="M240 400 Q512 360 790 400 M240 450 Q512 410 790 450 M240 500 Q512 460 790 500 M240 550 Q512 510 790 550 M240 600 Q512 560 790 600 M240 650 Q512 610 790 650 M240 700 Q512 660 790 700"/></g>
+<!-- lentilles de casque sur la planète -->
+<g clip-path="url(#disc)">
+<rect x="300" y="430" width="424" height="150" rx="40" fill="#5a3416" opacity=".9"/>
+<circle cx="420" cy="505" r="56" fill="#7cf5ff"/><circle cx="604" cy="505" r="56" fill="#7cf5ff"/>
+<circle cx="405" cy="488" r="16" fill="#fff" opacity=".85"/><circle cx="589" cy="488" r="16" fill="#fff" opacity=".85"/>
+</g>
+<!-- anneau avant -->
+<path d="M100 650 A430 120 -18 0 0 924 410" transform="rotate(0)" fill="none" stroke="url(#ring)" stroke-width="26" stroke-linecap="round" filter="url(#glow)"/>
+</svg>
